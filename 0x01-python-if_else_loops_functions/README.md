@@ -1,0 +1,1 @@
+this file is for practice of loops in python laguage.
