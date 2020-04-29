@@ -9,4 +9,3 @@ def uppercase(str):
             # print(str[i], end='')
         print('{:c}'.format(ascii_stri), end='')
     print()
-uppercase("Holberton School 98 Battery street")
