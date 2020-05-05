@@ -4,6 +4,6 @@ def element_at(my_list, idx):
         return
     for i in range(0, len(my_list)-1):
         if i == int(idx):
-            return (my_list[1])
+            return (my_list[i])
 if __name__ == '__main__':
     element_at([], int)
