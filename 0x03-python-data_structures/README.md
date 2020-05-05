@@ -1,0 +1,1 @@
+this file is for practice of list and tuplas in python.
