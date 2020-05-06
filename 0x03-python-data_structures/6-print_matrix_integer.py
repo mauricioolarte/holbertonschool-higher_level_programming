@@ -9,3 +9,5 @@ def print_matrix_integer(matrix=[[]]):
                 print('{:d} '.format(matrix[i][j]), end='')
             else:
                 print('{:d}'.format(matrix[i][j]))
+if __name__ == '__main__':
+    print_matrix_integer([[]])
