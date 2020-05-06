@@ -34,7 +34,7 @@ size_t number_nodes(const listint_t *h)
 
 int is_palindrome(listint_t **head)
 {
-	int nd, j;
+	int nd, j, flag = 0;
 	int *temp;
 	unsigned int n; /* number of nodes */
 	const listint_t *current;
@@ -54,8 +54,10 @@ int is_palindrome(listint_t **head)
 	for (j = 0; j < (nd / 2); j++)
 	{
 		if (temp[j] != temp[nd - 1 - j])
-			return (0);
+			flag = 1;
 	}
-	printf("%i\n", nd);
+	free (temp);
+	if (flag == 1)
+		return(0);
 	return (1);
 }
