@@ -17,5 +17,6 @@ def list_division(my_list_1, my_list_2, list_length):
             new_list[i] = 0
             mens = "out of range"
         finally:
-            print(mens)
+            if (mens != ""):
+                print(mens)
     return(new_list)
