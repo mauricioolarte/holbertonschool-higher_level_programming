@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """ this is for init a class square"""
+
+
 class Square():
     """this class is a square
     Args: None
-    Attributes: 
+    Attributes:
         size (int):is a integer.
     """
     def __init__(self, size=0):
