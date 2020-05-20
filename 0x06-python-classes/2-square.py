@@ -13,7 +13,7 @@ class Square():
         Args:
             size(int)
         """
-        if (type(size) != int):
+        if (type(size) == int):
             if (int(size) >= 0):
                 self.__size = int(size)
             else:
