@@ -2,6 +2,5 @@
 class Square():
     """ This is a empty class
     Args:
-    Attributes:
-    """
+    Attributes:"""
     pass
