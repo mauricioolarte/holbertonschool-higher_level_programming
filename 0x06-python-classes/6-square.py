@@ -112,12 +112,13 @@ class Square():
         """
         if self.size == 0:
                 print()
-        for coordenadesx in range(self.position[1]):
-            print()
-        for i in range(self.size):
-            print('{}'.format(" " * self.position[0]), end='')
-            for j in range(self.size):
-                if j == self.size - 1:
-                    print('#')
-                else:
-                    print('#'.format(), end='')
+        else:        
+            for coordenadesx in range(self.position[1]):
+                print()
+            for i in range(self.size):
+                print('{}'.format(" " * self.position[0]), end='')
+                for j in range(self.size):
+                    if j == self.size - 1:
+                        print('#')
+                    else:
+                        print('#'.format(), end='')
