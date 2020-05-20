@@ -23,7 +23,7 @@ class Square():
     #         raise TypeError('size must be an integer')
 
     # @property
-    def __init__(self, size=0, position=None):
+    def __init__(self, size=0, position=(0, 0)):
         """ this for init fuction
         Args:
             size(int)
@@ -39,12 +39,14 @@ class Square():
 
         if position:
             # if (type(position[0]) == int and position[1] == int):
-            #     if (position[1] >= 0 and position[0]>=0):
-            self.__position = position
-                # else:
-            #         raise TypeError('position must be a tuple of 2 positive integers')
+            if (position[1] >= 0 and position[0] >= 0):
+                self.__position = position
+            else:
+                raise TypeError('position must be a tuple of 2 \
+                    positive integers')
             # else:
-            #     raise TypeError('position must be a tuple of 2 positive integers')
+            # raise TypeError('position must be a
+            # tuple of 2 positive integers')
         else:
             self.__position = (0, 0)
 
@@ -81,8 +83,6 @@ class Square():
         else:
             raise TypeError('size must be an integer')
 
-    
-
     @property
     def position(self):
         """ this is for retrive a private value of size
@@ -96,13 +96,14 @@ class Square():
     @position.setter
     def position(self, value):
         if (type(value[0]) == int and value[1] == int):
-            if (value[1] >= 0 and value[0]>=0):
+            if (value[1] >= 0 and value[0] >= 0):
                 self.__position = value
             else:
-                raise TypeError('position must be a tuple of 2 positive integers')
+                raise TypeError('position must be a tuple\
+                    of 2 positive integers')
         else:
             raise TypeError('position must be a tuple of 2 positive integers')
-    
+
     def my_print(self):
         """ this print the square whit # symbol
             Args:
@@ -115,7 +116,6 @@ class Square():
         for i in range(self.size):
             print('{}'.format(" " * self.position[0]), end='')
             for j in range(self.size):
-                
                 if j == self.size - 1:
                     print('#')
                 else:
