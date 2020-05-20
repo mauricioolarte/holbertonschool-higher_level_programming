@@ -13,8 +13,8 @@ class Square():
         Args:
             size(int)
         """
-        if (type(size) != str):
-            if (size >= 0):
+        if (type(size) != int):
+            if (int(size) >= 0):
                 self.__size = int(size)
             else:
                 raise ValueError('size must be >= 0')
