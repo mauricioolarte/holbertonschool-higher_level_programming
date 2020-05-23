@@ -1,0 +1,24 @@
+===============================
+ How to Use 5-text_indentation.py
+===============================
+
+`text_indentation` print a name.
+
+import ``text_indentation()`` from ``5-text_indentation``
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("Hola mundo. que?")
+Hola mundo.
+<BLANKLINE>
+que?
+<BLANKLINE>
+>>> text_indentation('hol')
+hol
+>>> text_indentation('')
+Traceback (most recent call last):
+  ...
+TypeError: text must be a string
+>>> text_indentation(12)
+Traceback (most recent call last):
+  ...
+TypeError: text must be a string
+
