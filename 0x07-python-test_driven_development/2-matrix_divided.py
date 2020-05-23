@@ -18,17 +18,17 @@ def matrix_divided(matrix, div):
         raise TypeError(
                 'matrix must be a matrix (list of lists) of integers/floats')
     # matrix must be a list of lists of integers or floats
+    message = 'matrix must be a matrix (list of lists) of integers/floats'
     for i in matrix:
         if not type(i) is list:
             raise TypeError(
                 'matrix must be a matrix (list of lists) of integers/floats')
         for j in i:
             if not type(j) in [int, float]:
-               raise TypeError(
-                    'matrix must be a matrix (list of lists) of integers/floats')
+                raise TypeError(message)
 
     # Each row of the matrix must be of the same size
-    comparador = len(matrix[0]) # matrix[0] por ser inicio de arreglo
+    comparador = len(matrix[0])  # matrix[0] por ser inicio de arreglo
     for i in matrix:
         if len(i) != comparador:
             raise TypeError('Each row of the matrix must have the same size')
