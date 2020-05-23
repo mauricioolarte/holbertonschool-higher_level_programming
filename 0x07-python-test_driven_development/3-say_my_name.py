@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """
-
+function that prints My name is <first name> <last name>
 
 """
 
 
 def say_my_name(first_name, last_name=""):
-    """
-
+    """say_my_name(first_name, last_name="")
+        arg: strings, string
+        return: noting
     """
     if first_name is None:
         raise TypeError('first_name must be a string')
