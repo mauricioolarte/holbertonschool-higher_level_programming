@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 """Unittest for max_integer([..])
 """
-
 import unittest
 max_integer = __import__('6-max_integer').max_integer
-
 
 class TestMaxInteger(unittest.TestCase):
 
@@ -13,7 +11,7 @@ class TestMaxInteger(unittest.TestCase):
 
         # validate the result expected
         self.assertEqual(4, max)
-    
+
     def test_negative_list(self):
         max = max_integer([-1, -2, -5, -7])
 
@@ -25,10 +23,8 @@ class TestMaxInteger(unittest.TestCase):
 
         # validate the result expected
         self.assertEqual(0, max)
-    def test_str_in_list(self):
-        max = max_integer([3, 4,'h', 5])
 
         # validate the result expected
-        self.assertnotEqual(5, max)
+    #     self.assertnotEqual(5, max)
 if __name__ == '__main__':
     unittest.main()
