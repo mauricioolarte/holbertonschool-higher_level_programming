@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""
+"""function that divides all elements of a matrix.
     arg: matrix: is a list of list of integer/floats, div: is int/float
     Return: matrix
     """
 
 
 def matrix_divided(matrix, div):
-    """
+    """ this take a matrix and divid for div
     arg: matrix: is a list of list of integer/floats, div: is int/float
     Return: matrix
     """
