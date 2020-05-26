@@ -29,7 +29,7 @@ class Rectangle:
 
     def __str__(self):
         if self.print_symbol is '':
-            print('')
+            rectangle_str = ''
         if self.__width is 0 or self.__height is 0:
             rectangle_str = ''
         else:
