@@ -31,8 +31,8 @@ class Rectangle:
         if self.__width is 0 or self.__height is 0:
             rectangle_str = ''
         else:
-            rectangle_str = str(
-                (str(self.print_symbol) * self.__width + '\n') * self.__height)
+            rectangle_str =(
+                str(self.print_symbol) * self.__width + '\n') * self.__height
         return(rectangle_str)
 
     def __repr__(self):
