@@ -6,6 +6,7 @@ class Rectangle:
     """ this is a rectangle, simple class"""
 
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         if not type(width) is int:
@@ -19,7 +20,7 @@ class Rectangle:
         self.__width = width
         self.__height = height
         Rectangle.number_of_instances += 1
-        self.print_symbol = '#'
+        # self.print_symbol = '#'
 
     def area(self):
         return (self.__height * self.__width)
