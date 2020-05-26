@@ -32,7 +32,8 @@ class Rectangle:
             rectangle_str = ''
         else:
             rectangle_str = ((
-                (str(self.print_symbol) * self.__width + '\n') * (self.__height -1)) +
+                (str(self.print_symbol) * self.__width + '\n') * (
+                    self.__height - 1)) +
                 str(self.print_symbol) * self.__width)
         return(rectangle_str)
 
