@@ -2,10 +2,10 @@
  How to Use 7-base_geometry.py
 ===============================
 
-`base_geometry()` add two integer a and b.
+`BaseGeometry()` .
 
-import ``base_geometry()`` from ``7-base_geometry``
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+import ``BaseGeometry()`` from ``7-base_geometry``
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg.integer_validator("my_int", 12)
 >>> 
 >>> bg.integer_validator("name", "John")
