@@ -21,6 +21,27 @@ Traceback (most recent call last):
 ValueError: distance must be greater than 0
 >>> bg.integer_validator("width", 89)
 >>> 
+>>> bg.integer_validator()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> bg.integer_validator("jhon", )
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+>>> bg.integer_validator("jhon", 999e999)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/vagrant/holbertonschool-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 12, in integer_validator
+    raise TypeError("{} must be an integer".format(name))
+TypeError: jhon must be an integer
+>>> bg.integer_validator("jhon", 6.6)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/vagrant/holbertonschool-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 12, in integer_validator
+    raise TypeError("{} must be an integer".format(name))
+TypeError: jhon must be an integer
+
 
 
 
