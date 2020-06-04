@@ -3,6 +3,7 @@
 
 
 def read_file(filename=""):
+    """this module open a file"""
     with open(filename) as f:
         for line in f:
             print(line, end="")
