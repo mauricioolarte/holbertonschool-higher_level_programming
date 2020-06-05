@@ -13,10 +13,10 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(4, max)
 
     def test_negative_list(self):
-        max = max_integer([-1, -2, -5, -7])
+        max = max_integer([6, 2, 3, 4])
 
         # validate the result expected
-        self.assertEqual(-1, max)
+        self.assertEqual(6, max)
 
     def test_all_equals(self):
         max = max_integer([0, 0, 0, 0, 0])
@@ -25,22 +25,22 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(0, max)
 
     def test_expectec_function(self):
-        max = max_integer([4, 2, 3, 1])
+        max = max_integer([1, 6, 3, 4])
+
+        # validate the result expected
+        self.assertEqual(6, max)
+    
+    def test_expectec_function(self):
+        max = max_integer([1, -3, 4, 2])
 
         # validate the result expected
         self.assertEqual(4, max)
     
     def test_expectec_function(self):
-        max = max_integer([1, 4, 3, 2])
+        max = max_integer([-1, -3, -4, -2])
 
         # validate the result expected
-        self.assertEqual(4, max)
-    
-    def test_expectec_function(self):
-        max = max_integer([1, -2, 4, 3])
-
-        # validate the result expected
-        self.assertEqual(4, max)
+        self.assertEqual(-1, max)
     
     def test_expectec_function(self):
         max = max_integer([4])
