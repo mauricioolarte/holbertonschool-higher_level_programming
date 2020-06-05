@@ -49,7 +49,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(4, max)
     
     def test_expectec_function(self):
-        max = max_integer([4])
+        max = max_integer()
 
         # validate the result expected
         self.assertEqual(None, max)
