@@ -24,7 +24,35 @@ class TestMaxInteger(unittest.TestCase):
         # validate the result expected
         self.assertEqual(0, max)
 
+    def test_expectec_function(self):
+        max = max_integer([4, 2, 3, 1])
+
         # validate the result expected
-    #     self.assertnotEqual(5, max)
+        self.assertEqual(4, max)
+    
+    def test_expectec_function(self):
+        max = max_integer([1, 4, 3, 2])
+
+        # validate the result expected
+        self.assertEqual(4, max)
+    
+    def test_expectec_function(self):
+        max = max_integer([1, -2, 4, 3])
+
+        # validate the result expected
+        self.assertEqual(4, max)
+    
+    def test_expectec_function(self):
+        max = max_integer([4])
+
+        # validate the result expected
+        self.assertEqual(4, max)
+    
+    def test_expectec_function(self):
+        max = max_integer([4])
+
+        # validate the result expected
+        self.assertEqual(None, max)
+    
 if __name__ == '__main__':
     unittest.main()
