@@ -50,3 +50,7 @@ OverflowError: cannot convert float infinity to integer
 Traceback (most recent call last):
   ...
 OverflowError: cannot convert float infinity to integer
+>>> add_integer(2, None)
+Traceback (most recent call last):
+  ...
+NameError: b must be an integer
