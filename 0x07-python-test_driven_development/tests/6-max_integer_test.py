@@ -24,31 +24,31 @@ class TestMaxInteger(unittest.TestCase):
         # validate the result expected
         self.assertEqual(0, max)
 
-    def test_expectec_function(self):
+    def test_max_end(self):
         max = max_integer([1, 6, 3, 4])
 
         # validate the result expected
         self.assertEqual(6, max)
     
-    def test_expectec_function(self):
+    def test_one_negative(self):
         max = max_integer([1, -3, 4, 2])
 
         # validate the result expected
         self.assertEqual(4, max)
     
-    def test_expectec_function(self):
+    def test_all_negative(self):
         max = max_integer([-1, -3, -4, -2])
 
         # validate the result expected
         self.assertEqual(-1, max)
     
-    def test_expectec_function(self):
+    def test_one_value(self):
         max = max_integer([4])
 
         # validate the result expected
         self.assertEqual(4, max)
     
-    def test_expectec_function(self):
+    def test_empty_list(self):
         max = max_integer()
 
         # validate the result expected
