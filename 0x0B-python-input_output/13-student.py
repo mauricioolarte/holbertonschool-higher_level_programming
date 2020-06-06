@@ -27,3 +27,12 @@ class Student:
                 else:
                     dict['age'] = self.age
         return (dict)
+
+    def reload_from_json(self, json):
+        for element, value in json:
+            if element is 'first_name':
+                self.first_name = value
+            elif element is 'last_name':
+                self.last_name = value
+            elif element is 'age':
+                    self.age = value
