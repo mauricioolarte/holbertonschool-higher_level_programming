@@ -3,4 +3,7 @@
 
 def class_to_json(obj):
     """ this file is for comvert files to json"""
-    return({'name': obj.name, 'number': obj.number})
+    d = {}
+    for attr, value in obj.__dict__.items():
+        d[attr] = value
+    return d
