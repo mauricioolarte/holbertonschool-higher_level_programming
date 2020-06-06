@@ -3,5 +3,4 @@
 
 def class_to_json(obj):
     """ this file is for comvert files to json"""
-    a = str(obj)
-    return(a)
+    return({'name': obj.name, 'number': obj.number})
