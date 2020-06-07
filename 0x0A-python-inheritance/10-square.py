@@ -34,13 +34,13 @@ class Rectangle(BaseGeometry):
 
 class Square(Rectangle):
     """empty class"""
-    def __init__(self, width):
-        if self.integer_validator("width", width):
-            self.__width = width
+    def __init__(self, size):
+        if self.integer_validator("size", size):
+            self.__size = size
 
     def area(self):
-        a = self.__width
+        a = self.__size
         return a * a
 
     def __str__(self):
-        return ('[Rectangle] {}/{}'.format(self.__width, self.__width))
+        return ('[Rectangle] {}/{}'.format(self.__size, self.__size))
