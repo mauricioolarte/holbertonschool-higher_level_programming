@@ -25,3 +25,10 @@ import ``MyList`` from ``1-my_list``
 [-4, 1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5, -4]
+>>> my_list2 = MyList()
+>>> print(my_list2)
+[]
+>>> my_list2.print_sorted()
+[]
+>>> print(my_list2)
+[]
