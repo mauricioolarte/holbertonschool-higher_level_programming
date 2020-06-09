@@ -3,6 +3,7 @@
 
 
 from models.base import Base
+    """doc"""
 
 
 class Rectangle(Base):
@@ -48,6 +49,7 @@ class Rectangle(Base):
             print('#')
 
     def __str__(self):
+        """doc"""
         return(
             '[Rectangle] ({}) {}/{} - {}/{}'.format(
                 self.id, self.__x, self.__y, self.__width, self.__height)
@@ -101,22 +103,27 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """doc"""
         return self.__width
 
     @property
     def height(self):
+        """doc"""
         return self.__height
 
     @property
     def x(self):
+        """doc"""
         return self.__x
 
     @property
     def y(self):
+        """doc"""
         return self.__y
 
     @width.setter
     def width(self, width):
+        """doc"""
         if type(width) is not int:
             raise TypeError('width must be and integer')
         elif width <= 0:
@@ -126,6 +133,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, height):
+        """doc"""
         if type(height) is not int:
             raise TypeError('height must be and integer')
         elif height <= 0:
@@ -135,6 +143,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
+        """doc"""
         if type(x) is not int:
             raise TypeError('x must be and integer')
         elif x < 0:
@@ -144,6 +153,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
+        """doc"""
         if type(y) is not int:
             raise TypeError('y must be and integer')
         elif y < 0:

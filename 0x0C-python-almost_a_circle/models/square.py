@@ -17,12 +17,14 @@ class Square(Rectangle):
         Base.__init__(self, id)
 
     def __str__(self):
+        """doc"""
             return(
                 '[Square] ({}) {}/{} - {}'.format(
                     self.id, self.x, self.y, self.width)
                 )
 
     def update(self, *args, **kwargs):
+        """doc"""
         if args and len(args) > 0:
             for i in range(len(args)):
                 if i == 0:
@@ -55,10 +57,12 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """doc"""
         return self.width
 
     @size.setter
     def size(self, size):
+        """doc"""
         if type(size) is not int:
             raise TypeError('width must be and integer')
         elif size <= 0:
