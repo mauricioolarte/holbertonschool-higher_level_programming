@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-"""doc"""
+"""Google style docstrings.
+
+This module demonstrates documentation as specified by the `Google Python
+Style Guide`_. Docstrings may extend over multiple lines. Sections are created
+with a section header and a colon followed by a block of indented text.
+"""
 
 
 import json
@@ -10,9 +15,10 @@ class Base:
     """doc"""
 
     __nb_objects = 0
+    """doc"""
 
     def __init__(self, id=None):
-         """doc"""
+        """doc"""
         if id is not None:
             self.id = id
         else:
@@ -29,7 +35,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-         """doc"""
+        """doc"""
         if json_string is None:
             return ([])
         else:
