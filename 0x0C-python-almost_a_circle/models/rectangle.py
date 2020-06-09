@@ -2,8 +2,8 @@
 """doc"""
 
 
-from models.base import Base
-    """doc"""
+from base import Base
+"""doc"""
 
 
 class Rectangle(Base):

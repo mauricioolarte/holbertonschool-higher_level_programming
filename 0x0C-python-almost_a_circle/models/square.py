@@ -2,8 +2,8 @@
 """doc"""
 
 
-from models.base import Base
-from models.rectangle import Rectangle
+from base import Base
+from rectangle import Rectangle
 """doc"""
 
 
@@ -18,10 +18,10 @@ class Square(Rectangle):
 
     def __str__(self):
         """doc"""
-            return(
-                '[Square] ({}) {}/{} - {}'.format(
-                    self.id, self.x, self.y, self.width)
-                )
+        return(
+            '[Square] ({}) {}/{} - {}'.format(
+                self.id, self.x, self.y, self.width)
+            )
 
     def update(self, *args, **kwargs):
         """doc"""
