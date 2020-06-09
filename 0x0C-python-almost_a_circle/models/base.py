@@ -1,19 +1,29 @@
 #!/usr/bin/python3
-"""Google style docstrings.
-
+"""this module if for a class base
+Attributes:
+            def __init__: constructor method
 """
 
 
 import json
 
 
-class Base:
-    """doc"""
+class Base():
+    """ this a base class
+    Attributes:
+    __init__: construct method
+    to_json_string(list_dictionaries): conver dir in json file.
+    def from_json_string(json_string): import json file.
+    """
 
     __nb_objects = 0
+    """ this count number of objects created"""
 
     def __init__(self, id=None):
-        """doc"""
+        """ constructor method
+        Args:
+            id: is the number of the subslass.
+        """
         if id is not None:
             self.id = id
         else:
@@ -22,7 +32,10 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """doc"""
+        """this method take a list and return a json string
+            Argument : dictionary whit dir of object
+            Return : a json sting
+        """
         if list_dictionaries is None:
             return ([])
         else:
@@ -30,12 +43,11 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """doc"""
+        """this method take a list and return a json string
+            Argument : dictionary whit dir of object
+            Return : a json sting
+        """
         if json_string is None:
             return ([])
         else:
             return json.loads(json_string)
-
-    # @classmethod
-    # def create(cls, **dictionary):
-    #     return
