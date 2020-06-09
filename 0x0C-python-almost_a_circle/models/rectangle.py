@@ -63,8 +63,9 @@ class Rectangle(Base):
         """
         print('\n' * (self.__y), end='')
         for point in range(self.__height):
+            print(' ' * self.__x, end='')
             for point in range(self.__width - 1):
-                print(' ' * self.__x, end='')
+                # print(' ' * self.__x, end='')
                 print('#', end='')
             print('#')
 
