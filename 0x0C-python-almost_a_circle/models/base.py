@@ -1,21 +1,16 @@
 #!/usr/bin/python3
 """Google style docstrings.
 
-This module demonstrates documentation as specified by the `Google Python
-Style Guide`_. Docstrings may extend over multiple lines. Sections are created
-with a section header and a colon followed by a block of indented text.
 """
 
 
 import json
-"""doc"""
 
 
 class Base:
     """doc"""
 
     __nb_objects = 0
-    """doc"""
 
     def __init__(self, id=None):
         """doc"""
