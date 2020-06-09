@@ -69,7 +69,7 @@ class Rectangle(Base):
             print('#')
 
     def __str__(self):
-        """this method 
+        """this method
             Argument : self
             Return : sting whit data of arguments
         """
