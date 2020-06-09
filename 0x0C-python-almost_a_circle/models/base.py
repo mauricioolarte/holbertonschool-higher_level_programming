@@ -48,6 +48,6 @@ class Base():
             Return : a json sting
         """
         if json_string is None:
-            return ("[]")
+            return ([])
         else:
             return json.loads(json_string)
