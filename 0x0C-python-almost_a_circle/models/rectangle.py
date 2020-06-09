@@ -19,7 +19,10 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ constructor method
         Args:
-            id: is the number of the subslass.
+            width: is the number of the subslass.
+            height:
+            x, y:
+            id:
         """
         Base.__init__(self, id)
         if type(width) is not int:
@@ -49,15 +52,14 @@ class Rectangle(Base):
 
     def area(self):
         """this method take a list and return a json string
-            Argument : dictionary whit dir of object
-            Return : a json sting
+            Argument : None
+            Return : Area of rectangle
         """
         return self.__height * self.__width
 
     def display(self):
-        """this method take a list and return a json string
-            Argument : dictionary whit dir of object
-            Return : a json sting
+        """this method print a representation of rectangle
+            Argument : none
         """
         print('\n' * (self.__y), end='')
         for point in range(self.__height):
@@ -67,9 +69,9 @@ class Rectangle(Base):
             print('#')
 
     def __str__(self):
-        """this method take a list and return a json string
-            Argument : dictionary whit dir of object
-            Return : a json sting
+        """this method 
+            Argument : self
+            Return : sting whit data of arguments
         """
         return(
             '[Rectangle] ({}) {}/{} - {}/{}'.format(
@@ -162,10 +164,6 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, width):
-        """this method take a list and return a json string
-            Argument : dictionary whit dir of object
-            Return : a json sting
-        """
         if type(width) is not int:
             raise TypeError('width must be and integer')
         elif width <= 0:
@@ -175,10 +173,6 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, height):
-        """this method take a list and return a json string
-            Argument : dictionary whit dir of object
-            Return : a json sting
-        """
         if type(height) is not int:
             raise TypeError('height must be and integer')
         elif height <= 0:
@@ -188,10 +182,6 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
-        """this method take a list and return a json string
-            Argument : dictionary whit dir of object
-            Return : a json sting
-        """
         if type(x) is not int:
             raise TypeError('x must be and integer')
         elif x < 0:
@@ -201,10 +191,6 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
-        """this method take a list and return a json string
-            Argument : dictionary whit dir of object
-            Return : a json sting
-        """
         if type(y) is not int:
             raise TypeError('y must be and integer')
         elif y < 0:
