@@ -25,13 +25,3 @@ class Base:
             return ('[]')
         else:
             return json.dumps(str(list_dictionaries))
-
-    @staticmethod
-    def save_to_file(cls, list_objs):
-        # filename = str(self.__class__.__name__) + '.json'
-        for obj in list_objs:
-            string = str(dir(obj))
-            with open(rectangle.json, 'w') as file:
-
-                file.write(to_json_string(string))
-
