@@ -93,7 +93,7 @@ class Square(Rectangle):
             Return : Area of rectangle
         """
         if type(size) is not int:
-            raise TypeError('width must be and integer')
+            raise TypeError('width must be an integer')
         elif size <= 0:
             raise ValueError('width must be > 0')
         else:
