@@ -3,7 +3,7 @@
 
 
 from base import Base
-"""doc"""
+
 
 
 class Rectangle(Base):
