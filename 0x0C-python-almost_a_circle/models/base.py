@@ -57,7 +57,7 @@ class Base():
         a = cls.__name__ + ".json"
         if list_objs is None:
             with open(a, 'w') as file:
-                file.write([])
+                file.write(cls.to_json_string([]))
         else:
             with open(a, 'w') as file:
                 list = []
