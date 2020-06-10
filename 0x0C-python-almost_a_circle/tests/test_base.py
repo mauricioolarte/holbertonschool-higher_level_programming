@@ -22,7 +22,7 @@ class Test_BaseMethods(unittest.TestCase):
     @classmethod
     def test_tearDownClass(self):
         print("base tearDownClass")
-  
+
     def test_setUp(self):
         print("base setUp")
 

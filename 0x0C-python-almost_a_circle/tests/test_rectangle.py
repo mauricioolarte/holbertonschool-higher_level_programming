@@ -7,6 +7,7 @@
 import unittest
 from models.rectangle import Rectangle
 
+
 class TestBaseMethods(unittest.TestCase):
     """ this tests methods of base
         Atributes:
@@ -20,7 +21,7 @@ class TestBaseMethods(unittest.TestCase):
     @classmethod
     def test_tearDownClass(self):
         print("base tearDownClass")
-  
+
     def test_setUp(self):
         print("base setUp")
 
@@ -30,6 +31,5 @@ class TestBaseMethods(unittest.TestCase):
     def test_foo(self):
         self.assertTrue(True)
 
-    
 if __name__ == '__main__':
     unittest.main()
