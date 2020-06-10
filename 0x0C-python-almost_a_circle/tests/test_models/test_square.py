@@ -6,7 +6,7 @@
 
 import unittest
 import pep8
-from models.rectangle import Rectangle
+from models.square import Square
 
 
 class Test_BaseMethods(unittest.TestCase):
