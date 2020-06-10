@@ -64,3 +64,7 @@ class Base():
                 for obj in list_objs:
                     list.append(cls.to_dictionary(obj))
                 file.write(cls.to_json_string(list))
+
+    @classmethod
+    def create(cls, **dictionary):
+        pass
