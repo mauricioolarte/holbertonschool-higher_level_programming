@@ -1,5 +1,5 @@
 -- this display temperatrut
 -- ordered by city and average
-SELECT city, AVG(Fahrenheit)
+SELECT city, AVG(value)
 FROM temperatures
-ORDER BY AVG(Fahrenheit) DESC;
+GROUP BY city;
