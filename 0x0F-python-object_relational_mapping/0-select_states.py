@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" this module initialize a database"""
 import sys
 import MySQLdb
 
