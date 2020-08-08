@@ -11,6 +11,9 @@ if __name__ == "__main__":
                  cities.state_id=states.id\
                  where states.name = %s", (sys.argv[4],))
     rows = curs.fetchall()
-    for row in rows:
-        print(row[0], end=' ')
-        print()
+    for row in range(0, len(rows)):
+        if row == 0:
+            print("{}".format(rows[row][0]), end='')
+        else:
+            print(", {}".format(rows[row][0]), end='')
+    print()
