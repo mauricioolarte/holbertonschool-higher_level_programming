@@ -6,16 +6,10 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 
-if __name__ == "__main__":
-    Session = sessionmaker(bind=engine)
-    session = Session()
-
-    Base = declarative_base()
-
-    class State(Base):
-        """ this create a table states """
-        __tablename__ = 'states'
-
-        id = Column(Integer, autoincrement=True, nullable=False,
-                    primary_key=True)
-        name = Column(String(128), nullable=False)
+Base = declarative_base()
+class State(Base):
+    """ this create a table states """
+    __tablename__ = 'states'
+    id = Column(Integer, autoincrement=True, nullable=False,
+                primary_key=True)
+    name = Column(String(128), nullable=False)
