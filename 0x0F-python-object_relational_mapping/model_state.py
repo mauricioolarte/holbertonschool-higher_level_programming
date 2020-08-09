@@ -7,6 +7,8 @@ from sqlalchemy.orm import sessionmaker
 
 
 Base = declarative_base()
+
+
 class State(Base):
     """ this create a table states """
     __tablename__ = 'states'
