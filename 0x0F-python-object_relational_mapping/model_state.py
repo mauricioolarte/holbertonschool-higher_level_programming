@@ -23,7 +23,7 @@ if __name__ == "__main__":
         """ this create a table states """
         __tablename__ = 'states'
 
-        id = Column(Integer, autoincrement=True, nullable=False, unique=True,
+        id = Column(Integer, autoincrement=True, nullable=False,
                     primary_key=True)
         name = Column(String(128), nullable=False)
 
