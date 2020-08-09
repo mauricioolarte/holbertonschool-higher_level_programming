@@ -18,4 +18,4 @@ if __name__ == "__main__":
     query = session.query(State)
 
     for row in query:
-        print("{}:{}".format(row.id, row.name))
+        print("{}: {}".format(row.id, row.name))
