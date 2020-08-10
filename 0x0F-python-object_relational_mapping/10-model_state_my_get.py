@@ -16,8 +16,8 @@ if __name__ == "__main__":
     session = Session()
 
     query = session.query(State).filter_by(name="{}".format(sys.argv[4]))
-    for row in query:
-        if row.id:
+    if query.all() == []:
+        print("Not found")
+    else:
+        for row in query:
             print("{}".format(row.id))
-        else:
-            print("Not found")
