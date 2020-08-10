@@ -7,7 +7,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 
 
-
 class City(Base):
     """ this create a table states """
     __tablename__ = 'cities'
