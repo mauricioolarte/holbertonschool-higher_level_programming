@@ -3,10 +3,9 @@
 """
 import sys
 from model_state import Base, State
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine
 from model_city import City
-from sqlalchemy.orm import sessionmaker, join, query
-from sqlalchemy import (create_engine)
-from sqlalchemy import asc
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
@@ -16,7 +15,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    query = session.query(State).join(City).order_by(cities.id.asc())
-    for row in query:
-        for city in row.states:
-            print("{}: ({}) {}".format(states.name, cities.id, cities.name))
+    query = session.query(City).join(State).order_by(City.id)
+    for row in query.all():
+        print("{}: ({}) {}".format(row.states.name, row.id, row.name))
