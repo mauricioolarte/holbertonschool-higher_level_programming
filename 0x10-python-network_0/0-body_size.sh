@@ -1,3 +1,3 @@
-#!/bin/bash/env bash
+#!/usr/bash/env bash
 #this show the size of dowload whit curl
-curl -so /dev/null $1 -w '%{size_request} bytes\n'
+curl $1 -w '%{size_request} bytes\n'
