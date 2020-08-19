@@ -1,1 +1,2 @@
+#complexyti algoritm
 O(log(n))
