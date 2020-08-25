@@ -1,5 +1,4 @@
-File Edit Options Buffers Tools Python Help                                                                                     
-#!/usr/bin/python3                                                                                                              
+#!/usr/bin/python3
 """ this module script that fetches https://intranet.hbtn.io/status """
 import requests
 import sys
@@ -20,4 +19,3 @@ if __name__ == "__main__":
             print('[{}] {}'.format(answ.get('id'), answ.get('name')))
     except:
         print("Not a valid JSON")
-
