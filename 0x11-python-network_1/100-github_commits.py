@@ -13,6 +13,6 @@ if __name__ == "__main__":
     j = 0
     for i in answ:
         while j < 10:
-            print("{}: {}".format(answ[j]['sha'],
-                  answ[j]["commit"]["author"]["name"]))
+            print("{}: {}".format(answ[j].get('sha'),
+                  answ[j].get("commit").get("author").get("name")))
             j = j + 1
