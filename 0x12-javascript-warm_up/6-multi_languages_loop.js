@@ -1,6 +1,6 @@
 #!/usr/bin/node
+let i;
 const lenguages = ['C is fun', 'Python is coo', 'avascript is amazing'];
-lenguages.forEach(printLeng);
-function printLeng (item) {
-  console.log(item);
+for (i = 0; i < lenguages.length; i++) {
+  console.log(lenguages[i]);
 }
