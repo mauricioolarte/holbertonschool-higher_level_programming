@@ -2,9 +2,9 @@
 // this is class recngle.
 
 class Rectangle {
-  constructor (w, h) {
-    this.height = h;
-    this.width = w;
+  constructor (width, height) {
+    this.height = height;
+    this.width = width;
   }
 }
 
