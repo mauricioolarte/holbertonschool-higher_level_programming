@@ -10,7 +10,7 @@ class Square extends Rectangle {
   }
 
   charPrint (c) {
-    if (c == null) {
+    if (c == undefined) {
       this.print();
     } else {
       stingc = c;
