@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // define a empty cladd rectangle.
 
-const Rectangle = class {};
+class Rectangle {}
 
 module.exports.Rectangle = Rectangle;
