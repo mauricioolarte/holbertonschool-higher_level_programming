@@ -11,7 +11,10 @@ class Square extends Rectangle {
 
   charPrint (c) {
     if (c == undefined) {
-      this.print();
+      stingc = 'X';
+      for (i = 0; i < this.height; i++) {
+        console.log(stingc.repeat(this.width));
+      }
     } else {
       stingc = c;
       for (i = 0; i < this.height; i++) {
