@@ -2,10 +2,10 @@
 // this is class recngle.
 
 class Rectangle {
-  constructor (height, width) {
-    this.height = height;
-    this.width = width;
+  constructor (w, h) {
+    this.height = h;
+    this.width = w;
   }
 }
 
-module.exports.Rectangle = Rectangle;
+module.exports = Rectangle;
