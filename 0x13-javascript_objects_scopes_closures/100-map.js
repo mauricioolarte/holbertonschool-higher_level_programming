@@ -4,11 +4,11 @@
 const list = require('./100-data').list;
 
 let count = 0;
-const newlist = list.map(changelist)
+const newlist = list.map(changelist);
 function changelist (ind) {
-  value = ind * count;
+  const value = ind * count;
   count += 1;
-  return (value);   
-};
+  return (value);
+}
 console.log(list);
 console.log(newlist);
