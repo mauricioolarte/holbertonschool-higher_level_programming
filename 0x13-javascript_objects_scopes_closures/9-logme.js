@@ -3,7 +3,7 @@
 
 let count = 0;
 exports.logMe = function (item) {
-    const texttoprint = count + ': ' + item
-    console.log(texttoprint)
-    count += 1;
-}
+  const texttoprint = count + ': ' + item;
+  console.log(texttoprint);
+  count += 1;
+};
