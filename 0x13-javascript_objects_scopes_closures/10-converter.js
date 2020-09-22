@@ -2,5 +2,8 @@
 // function that converts a number from base 10 to another base passed as argument
 
 exports.converter = function (base) {
-  return (base.toString(base));
+  function changebase (value) {
+    return (value.toString(base));
+  }
+  return changebase;
 };
