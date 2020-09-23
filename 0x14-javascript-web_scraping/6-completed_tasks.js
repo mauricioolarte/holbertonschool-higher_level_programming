@@ -3,7 +3,6 @@
 
 const request = require('request');
 
-
 const urlconsu = process.argv[2];
 request(urlconsu, function (error, response, body) {
   const respuesta = {};
