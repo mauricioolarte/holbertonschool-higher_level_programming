@@ -3,7 +3,7 @@
 
 const request = require('request');
 
-const urlconsu = 'https://swapi-api.hbtn.io/api/films/';
+const urlconsu = process.argv[2];
 request(urlconsu, function (error, response, body) {
   let count = 0;
   if (error) {
