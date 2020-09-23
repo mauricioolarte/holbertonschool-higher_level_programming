@@ -3,9 +3,10 @@
 
 const request = require('request');
 
-const respuesta = {};
-const urlconsu = 'https://jsonplaceholder.typicode.com/todos';
+
+const urlconsu = process.argv[2];
 request(urlconsu, function (error, response, body) {
+  const respuesta = {};
   if (error) {
     console.error('error:', error);
   }
